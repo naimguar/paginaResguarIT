@@ -1,0 +1,17 @@
+#videoFondo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.fondoPantalla {
+    position: relative;
+    z-index: 0;
+    height: 500vh;
+    display: flex;
+    justify-content: center;
+}

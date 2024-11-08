@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: auto; /* Ajusta el ancho al contenido */
+    font-family: 'Roboto', sans-serif;
+    background-color: #a8a6a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    z-index: 1000;
+    border-radius: 50px;
+    margin: 10px 0 0 0;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-item {
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    /* Elimina la transición */
+  }
+  
+  /* Estilos específicos para la opción "Contacto" */
+  .navbar-item:last-child {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+  }
+  
+  /* Hover para todas las opciones excepto "Contacto" */
+  .navbar-item:not(:last-child):hover {
+    background-color: black;
+    border-radius: 20px; /* Border-radius más grande */
+  }
+  
+  
+  
