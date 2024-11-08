@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #d5d5d544;
+    display: flex;
+    justify-content: space-between; /* Para separar el logo y el menú */
+    align-items: center;
+    padding: 3px;
+    z-index: 1000;
+    border-radius: 50px;
+    margin: 10px 0 0 0;
+    transition: all 0.3s ease; /* Transición suave para el cambio en pantallas pequeñas */
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-item {
+    color: white;
+    cursor: pointer;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    transition: background-color 0.8s ease;
+}
+
+/* Estilos específicos para la opción "Contacto" */
+.navbar-item:last-child {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+/* Hover para todas las opciones excepto "Contacto" */
+.navbar-item:not(:last-child):hover {
+    background-color: black;
+    border-radius: 20px;
+}
+
+/* Estilo para el menú hamburguesa en pantallas pequeñas */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: absolute; /* Posición absoluta para moverlo a la izquierda */
+    top: 2vh; /* Distancia desde la parte superior en porcentaje de la altura de la pantalla */
+    left: 35vw;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Ocultar el menú de opciones en pantallas pequeñas */
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #d5d5d544;
+        position: absolute;
+        top: 60px; /* Justo debajo del navbar */
+        left: 0;
+        padding: 1rem;
+        z-index: 999;
+    }
+
+    /* Mostrar el menú cuando está abierto */
+    .navbar-list.open {
+        display: flex;
+    }
+
+    /* Mostrar el ícono del menú hamburguesa en pantallas pequeñas */
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+
+
+
+  
+  
+  

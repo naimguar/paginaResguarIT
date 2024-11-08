@@ -1,9 +1,13 @@
-import React from 'react';
-import SocialMedia from './components/SocialMedia/SocialMedia.jsx';
+import logo from './logo.svg';
+import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Aplicacion from './components/Aplicacion'
 
 function App() {
   return (
-    <SocialMedia></SocialMedia>
+    <>
+    <Aplicacion></Aplicacion>
+    </>
   );
 }
 
