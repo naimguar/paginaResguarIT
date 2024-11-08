@@ -10,10 +10,12 @@ function Aplicacion() {
                 <video autoPlay muted loop id="videoFondo">
                     <source src={fondoPantalla} type="video/mp4" />
                 </video>
-                <Navbar></Navbar>
+                <Navbar />
             </div>
         </>
     );
 }
 
 export default Aplicacion;
+
+
