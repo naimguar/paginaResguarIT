@@ -1,0 +1,13 @@
+.contenedor-form{
+    background-color: #fff; /* radial-gradient(circle, #999999, #4F4646); */
+    height:50vh;
+    width:50vw;
+    margin-top:350vh;
+}
+
+input{
+    display:block;
+    margin: 5px;
+    height: 30px;
+    width: 50%;
+}
